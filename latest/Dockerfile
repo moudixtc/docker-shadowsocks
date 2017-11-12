@@ -9,7 +9,7 @@ ARG dumb_init_path=/usr/local/bin/dumb-init
 RUN apt-get update && \
     apt-get install -y curl git python3 && \
     curl -sSL https://bootstrap.pypa.io/get-pip.py | python3 && \
-    curl -sSL -o ${dumb_init_path} https://github.com/Yelp/dumb-init/releases/download/v${dumb_init_version}/dumb-init_${dumb_init_version}_amd64
+    curl -sSL -o ${dumb_init_path} https://github.com/Yelp/dumb-init/releases/download/v${dumb_init_version}/dumb-init_${dumb_init_version}_amd64 && \
     chmod +x ${dumb_init_path}
 
 RUN pip3 install git+https://github.com/shadowsocks/shadowsocks.git@master && \
