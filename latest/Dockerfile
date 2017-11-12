@@ -19,5 +19,5 @@ EXPOSE 8388
 
 VOLUME ["/etc/shadowsocks"]
 
-ENTRYPOINT ["${dumb_init_path}", "--"]
+ENTRYPOINT ["dumb-init", "--"]
 CMD ["/usr/local/bin/ssserver", "-c", "/etc/shadowsocks/shadowsocks.json"]
