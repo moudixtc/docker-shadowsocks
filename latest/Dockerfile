@@ -17,7 +17,5 @@ RUN pip3 install git+https://github.com/shadowsocks/shadowsocks.git@master && \
 
 EXPOSE 8388
 
-VOLUME ["/etc/shadowsocks"]
-
 ENTRYPOINT ["dumb-init", "--"]
 CMD ["/usr/local/bin/ssserver", "-c", "/etc/shadowsocks/shadowsocks.json"]
