@@ -1,9 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 LABEL maintainer="Di Mou <moudi717@gmail.com>" \
       image="moudixtc/shadowsocks:latest"
 
-ARG dumb_init_version=1.2.0
+ARG dumb_init_version=1.2.1
 ARG dumb_init_path=/usr/local/bin/dumb-init
 
 RUN apt-get update && \
