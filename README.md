@@ -1,5 +1,5 @@
 # moudixtc/shadowsocks
-Docker image for [shadowsocks server](https://github.com/shadowsocks/shadowsocks/tree/master) based on Ubuntu 16.04 LTS.
+Docker image for [shadowsocks server](https://github.com/shadowsocks/shadowsocks/tree/master) based on Ubuntu 18.04 LTS.
 
 # Tags
 - [`latest` (*latest/Dockerfile*)](https://github.com/moudixtc/docker-shadowsocks/blob/master/latest/Dockerfile)
